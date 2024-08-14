@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { StyleButtonComponent } from './src/components/style-button/style-button.component';
+import { MainContainerComponent } from "./src/components/layout/main-container/main-container.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, StyleButtonComponent],
+  imports: [RouterOutlet, MainContainerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
