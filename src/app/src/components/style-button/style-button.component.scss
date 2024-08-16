@@ -1,20 +1,23 @@
-button{
-padding: 10px 20px;
-border: none;
-cursor: pointer;
-font-size: 16px;
-transition: all 0.3s ease;
+button {
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.1s ease-in-out;
+
+    &:active {
+        transform: scale(0.95);
+    }
 }
 
-.ellipse {
-clip-path: ellipse(50% 50% at 50% 50%);
+.elliptical {
+    clip-path: ellipse( 50% 50% at 50% 50% );
 }
 
-.rectangle {
-border-radius: 5px;
+.rectangular {
+    border-radius: 5px;
 }
 
-.hexagon {
-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-border-radius: 5px;
+.hexagonal {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
